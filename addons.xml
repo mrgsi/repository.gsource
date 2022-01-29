@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.0.0" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Source Repository">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/</datadir>
+    </dir>   
+    <dir>
+        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+    </dir>
+    <dir minversion="18.9.0">
+        <info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info> <checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>For Kodi 19 and above</summary>
+    <description>Discover Huge Directory of Repos and Add-ons for Kodi 19 and above.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
+    
+<addon id="plugin.audio.tuneinradio" name="[COLOR aqua]TuneIn Radio K19[/COLOR]" version="4.0.2" provider-name="joaconigro">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0"/>
+		<!-- <import addon="script.module.web-pdb" /> -->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <language>en es</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+        <email>joaquinnigro@gmail.com</email>
+		<summary lang="en_GB">TuneIn Radio</summary>
+		<summary lang="es_ES">TuneIn Radio</summary>
+		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<license>MIT</license>
+		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
+		<assets>
+        	<icon>icon.png</icon>
+        	<fanart>fanart.jpg</fanart>
+    	</assets>
+	</extension>	
+</addon>
+
+<addon id="plugin.image.pdfreader" name="PDF Reader" version="2.0.2" provider-name="i96751414">
+    <requires>
+        <!--<import addon="xbmc.python" version="3.0.0"/>-->
+        <import addon="script.module.pil"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>image</provides>
+    </extension>
+    <extension library="lib/api" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+        <language>en</language>
+        <platform>all</platform>
+        <summary lang="en">PDF Reader</summary>
+        <description lang="en">Read your pdf's through Kodi.</description>
+        <license>GPL 2.0</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/img/screenshot-1.png</screenshot>
+            <screenshot>resources/img/screenshot-2.png</screenshot>
+            <screenshot>resources/img/screenshot-3.png</screenshot>
+            <screenshot>resources/img/screenshot-4.png</screenshot>
+        </assets>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="plugin.program.rsi" name="Repo Source Installer" provider-name="G-Man" version="1.0.0">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.routing" version="0.2.0" />
+	    <import addon="script.module.beautifulsoup4" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">A quick way to install Add-on Repositories (Kodi 19 and up)</summary>
+        <description lang="en_GB">Quickly and easily add third party sources to your File Manager, so you can install from zip file[CR]For Kodi 19 and above versions.[CR]None of the Repos are contained within this addon, it only serves to install URL's so you can download and install the developer's official repo zip file. [CR]This add-on is a fork of another add-on. The listing was updated and reformatted after some extensive searches for repositories and add-ons. Credit to the original creator for it's design and function. For info on add-ons in general, see https://www.reddit.com/r/Addons4Kodi/</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="service.subtitles.customizer" name="Customizer" version="0.0.2" provider-name="i96751414">
+    <requires>
+        <!--<import addon="xbmc.python" version="3.0.0"/>-->
+    </requires>
+    <extension point="xbmc.subtitle.module" library="service.py"/>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Customizer</summary>
+        <description lang="en">Subtitle customizer for Kodi.</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://github.com/i96751414/service.subtitles.customizer</website>
+        <news>
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>resources/img/screenshot_1.png</screenshot>
+            <screenshot>resources/img/screenshot_2.png</screenshot>
+            <screenshot>resources/img/screenshot_3.png</screenshot>
+            <screenshot>resources/img/screenshot_4.png</screenshot>
+        </assets>
+        <source>https://github.com/i96751414/service.subtitles.customizer</source>
+    </extension>
+</addon>
+    
+</addons>
