@@ -125,7 +125,7 @@
     <email>andrelofgren@hotmail.co.uk</email>
     <source>https://github.com/Ikosse/plugin.video.documentaryheaven</source>
     <assets>
-		<icon>resources/icon.png</icon>
+		<icon>icon.png</icon>
 		<fanart>resources/fanart.jpg</fanart>
 		<banner>resources/banner.png</banner>
 		<screenshot>resources/screenshot-01.jpg</screenshot>
