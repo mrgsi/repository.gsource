@@ -26,33 +26,6 @@
     </assets>
 </extension>
 </addon>
-    
-<addon id="plugin.image.pdfreader" name="PDF Reader" version="2.0.2" provider-name="i96751414">
-    <requires>
-        <!--<import addon="xbmc.python" version="3.0.0"/>-->
-        <import addon="script.module.pil"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>image</provides>
-    </extension>
-    <extension library="lib/api" point="xbmc.python.module"/>
-    <extension point="xbmc.addon.metadata">
-        <language>en</language>
-        <platform>all</platform>
-        <summary lang="en">PDF Reader</summary>
-        <description lang="en">Read your pdf's through Kodi.</description>
-        <license>GPL 2.0</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/img/screenshot-1.png</screenshot>
-            <screenshot>resources/img/screenshot-2.png</screenshot>
-            <screenshot>resources/img/screenshot-3.png</screenshot>
-            <screenshot>resources/img/screenshot-4.png</screenshot>
-        </assets>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-    </extension>
-</addon>
 
 <addon id="plugin.program.rsi" name="Repo Source Installer" provider-name="G-Man" version="1.0.0">
     <requires>
