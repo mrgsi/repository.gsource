@@ -134,6 +134,101 @@
   </extension>
 </addon>
     
+<addon id="plugin.video.internetarchive" name="Internet Archive [Video]" version="4.2.6" provider-name="MetalChris,gujal">
+  <requires>
+    <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.beautifulsoup4" version="4.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch thousands of free videos and movies from the Internet Archive</summary>
+    <description lang="en">Internet Archive is a non-profit digital library.  Choose from thousands of digital movies uploaded by Archive users which range from classic full-length films, to daily alternative news broadcasts, to cartoons and concerts. *Matrix Version*</description>
+    <disclaimer lang="en">Support provided at forum.kodi.tv or via my github.  I will not provide support at TVaddons, or any other forum.  Please provide a full, unedited, debug log when requesting support.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <news>
+v4.2.6
+- Fixes for search pagination and quality selection.
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.powernationtv" name="PowerNation TV" version="2022.03.05" provider-name="MetalChris, zymbiosis">
+    <requires>
+    <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0 or Later</license>
+        <summary lang="en">PowerNation TV is the source of how-to television for auto enthusiasts.</summary>
+        <description lang="en">PowerNation TV brings you in-depth how-to shows to cater to your automotive interests, featuring Xtreme Off-Road, Detroit Muscle, Truck Tech, Engine Power and more!  Currently this add-on provides access to the free episodes only.  *Matrix Version*</description>
+        <disclaimer lang="en">For support go to my github. No support without a full, unedited debug log.  No support at TVAddons or any other forum.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL(v2) or Later</license>
+        <forum></forum>
+        <website>http://www.powernationtv.com</website>
+        <email></email>
+        <source>https://github.com/MetalChris/repository.metalchris/tree/master/plugin.video.powernationtv</source>
+        <news>Version 2022.03.04 - Fixed missing dependency in addon.xml file.</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.quest" name="Quest" version="2022.04.01" provider-name="MetalChris">
+    <requires>
+        <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">24/7 Quest programming</summary>
+        <description lang="en">Quest is a 24/7 broadcast television network that entertains and informs its viewers with exhilarating adventure programming about nature's greatest dangers, history's greatest mysteries and man's greatest achievements. *Matrix Version*</description>
+        <disclaimer lang="en">For support go to my github. No support without a full, unedited debug log.  No support at TVAddons or any other forum.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL(v2) or Later</license>
+        <forum></forum>
+        <website>https://www.questtv.com/</website>
+        <email></email>
+        <source></source>
+        <news>v.2022.04.01[CR]- Initial Release for Matrix</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+    
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.6.2" provider-name="doko">
     <requires>
         <import addon="script.module.requests"/>
